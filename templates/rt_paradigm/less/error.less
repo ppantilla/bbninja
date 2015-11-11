@@ -1,0 +1,51 @@
+/**
+* @version   $Id: error.less 12813 2013-08-16 21:57:09Z arifin $
+* @author    RocketTheme http://www.rockettheme.com
+* @copyright Copyright (C) 2007 - 2013 RocketTheme, LLC
+* @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+@import "variables.less";
+@import "/jui/less/mixins.less";
+@import "mixins/index.less";
+
+.rt-error-header {
+	padding: 25px 0;
+}
+.rt-error-title {
+	font-size: 5em !important;
+	line-height: 1 !important;
+	text-align: center;
+	margin: 15px 0;
+	opacity: 0.5;
+}
+.rt-error-msg {
+	text-align: center;
+	margin: 0;
+	opacity: 0.5;
+}
+.rt-error-desc-title {
+	letter-spacing: 5px;
+}
+#rt-error-desc {
+	color: @white;
+	background: url(../images/backgrounds/pattern/paradigm.png) repeat-x scroll 50% -100% darken(@main-accent, 25%);
+	padding: 150px 0;
+	text-align: center;
+	.readon {
+		margin-top: 35px;
+	}
+}
+.rt-error-desc-message {
+	width: 60%;
+	margin: auto;
+}
+
+// Mobile Modes
+@media (max-width: 767px) {
+	body.layout-mode-responsive {	
+		#rt-subscription-form {		
+			background-position: 50% 150px;
+		}	
+	}
+}
