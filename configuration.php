@@ -16,7 +16,7 @@ class JConfig {
 	public $db = 'heroku_eebb563a480856c';
 	public $dbprefix = 'prm_';
 	public $dbtype = 'mysqli';
-	public $debug = '0';
+	public $debug = '1';
 	public $debug_lang = '0';
 	public $display_offline_message = '1';
 	public $editor = 'tinymce';
