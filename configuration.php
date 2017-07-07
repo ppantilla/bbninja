@@ -13,7 +13,7 @@ class JConfig {
 	public $captcha = 'recaptcha';
 	public $cookie_domain = '';
 	public $cookie_path = '';
-	public $db = 'db60664_a4wvalpha';
+	public $db = 'heroku_eebb563a480856c';
 	public $dbprefix = 'prm_';
 	public $dbtype = 'mysqli';
 	public $debug = '0';
@@ -33,7 +33,7 @@ class JConfig {
 	public $ftp_user = '';
 	public $gzip = '0';
 	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&keyref=Help{major}{minor}:{keyref}';
-	public $host = 'internal-db.s60664.gridserver.com';
+	public $host = 'us-cdbr-iron-east-03.cleardb.net';
 	public $lifetime = '9999';
 	public $list_limit = '20';
 	public $live_site = '';
@@ -42,14 +42,14 @@ class JConfig {
 	public $mailfrom = 'support@bbninja.com';
 	public $memcache_compress = '1';
 	public $memcache_persist = '1';
-	public $memcache_server_host = 'localhost';
+	public $memcache_server_host = 'us-cdbr-iron-east-03.cleardb.net';
 	public $memcache_server_port = '11211';
 	public $offline = '0';
 	public $offline_image = '';
 	public $offline_message = 'This site is down for maintenance.<br /> Please check back again soon.';
 	public $offset = 'UTC';
 	public $offset_user = 'UTC';
-	public $password = 'Verdant8711436?';
+	public $password = '33573e82';
 	public $robots = '';
 	public $secret = 'HneOZwMIo0ItNs0UmyQZH5lQA3WVBJEC';
 	public $sef = '1';
@@ -67,7 +67,7 @@ class JConfig {
 	public $smtpuser = '';
 	public $tmp_path = '/nfs/c04/h03/mnt/60664/domains/bbninjaalpha.pantilla.com/html/tmp';
 	public $unicodeslugs = '0';
-	public $user = 'db60664_attack';
+	public $user = 'bcec7a14b74598';
 	public $mailonline = '1';
 	public $frontediting = '1';
 	public $asset_id = '1';
