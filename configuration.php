@@ -13,7 +13,7 @@ class JConfig {
 	public $captcha = 'recaptcha';
 	public $cookie_domain = '';
 	public $cookie_path = '';
-	public $db = 'heroku_eebb563a480856c';
+	public $db = 'heroku_8990b54bcad09dc';
 	public $dbprefix = 'prm_';
 	public $dbtype = 'mysqli';
 	public $debug = '1';
@@ -49,7 +49,7 @@ class JConfig {
 	public $offline_message = 'This site is down for maintenance.<br /> Please check back again soon.';
 	public $offset = 'UTC';
 	public $offset_user = 'UTC';
-	public $password = '33573e82';
+	public $password = 'e7130233';
 	public $robots = '';
 	public $secret = 'HneOZwMIo0ItNs0UmyQZH5lQA3WVBJEC';
 	public $sef = '1';
@@ -65,9 +65,9 @@ class JConfig {
 	public $smtpport = '25';
 	public $smtpsecure = 'none';
 	public $smtpuser = '';
-	public $tmp_path = '/nfs/c04/h03/mnt/60664/domains/bbninjaalpha.pantilla.com/html/tmp';
+	public $tmp_path = './html/tmp';
 	public $unicodeslugs = '0';
-	public $user = 'bcec7a14b74598';
+	public $user = 'bf4ef58d12dbab';
 	public $mailonline = '1';
 	public $frontediting = '1';
 	public $asset_id = '1';
