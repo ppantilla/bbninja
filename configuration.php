@@ -66,7 +66,7 @@ class JConfig {
 	public $smtpport = '25';
 	public $smtpsecure = 'none';
 	public $smtpuser = '';
-	public $tmp_path = './html/tmp';
+	public $tmp_path = './tmp';
 	public $unicodeslugs = '0';
 	public $user = 'bf4ef58d12dbab';
 	public $mailonline = '1';
