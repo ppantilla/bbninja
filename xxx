@@ -1,0 +1,101 @@
+2017-07-08T09:27:45.181586+00:00 heroku[router]: at=info method=GET path="/" host=bbninja.herokuapp.com request_id=fa8f2792-8b7c-433f-a96b-93fb85a9ecf0 fwd="121.54.44.157" dyno=web.1 connect=0ms service=308ms status=500 bytes=169 protocol=https
+2017-07-08T09:27:45.181965+00:00 app[web.1]: 10.179.109.26 - - [08/Jul/2017:09:27:44 +0000] "GET / HTTP/1.1" 500 - "https://dashboard.heroku.com/" "Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+2017-07-08T09:33:14.419785+00:00 heroku[router]: at=info method=GET path="/test.php" host=bbninja.herokuapp.com request_id=f82e5d0d-1ab1-419c-ae9a-6f63881285f6 fwd="121.54.44.157" dyno=web.1 connect=1ms service=3ms status=500 bytes=169 protocol=https
+2017-07-08T09:33:14.420219+00:00 app[web.1]: [08-Jul-2017 09:33:14 UTC] PHP Fatal error:  Call to undefined function mysql_connect() in /app/test.php on line 2
+2017-07-08T09:33:14.420603+00:00 app[web.1]: 10.155.8.85 - - [08/Jul/2017:09:33:14 +0000] "GET /test.php HTTP/1.1" 500 - "-" "Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+2017-07-08T09:47:34.971094+00:00 heroku[router]: at=info method=GET path="/index.php" host=bbninja.herokuapp.com request_id=4fcb4fa8-a9ca-470f-9e2b-777007e33bc3 fwd="121.54.44.157" dyno=web.1 connect=1ms service=318ms status=500 bytes=427 protocol=https
+2017-07-08T09:47:34.971993+00:00 app[web.1]: 10.179.86.73 - - [08/Jul/2017:09:47:34 +0000] "GET /index.php HTTP/1.1" 500 238 "-" "Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+2017-07-08T09:47:57.478109+00:00 heroku[router]: at=info method=GET path="/administrator/" host=bbninja.herokuapp.com request_id=9bdcaf14-8e70-4ad9-8708-57691c9a028e fwd="121.54.44.157" dyno=web.1 connect=1ms service=56ms status=200 bytes=378 protocol=http
+2017-07-08T09:47:57.475898+00:00 app[web.1]: 10.186.81.42 - - [08/Jul/2017:09:47:57 +0000] "GET /administrator/ HTTP/1.1" 200 208 "-" "Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+2017-07-08T10:14:37.000000+00:00 app[api]: Build started by user ppantilla@yahoo.com
+2017-07-08T10:14:37.000000+00:00 app[api]: Build succeeded
+2017-07-08T10:14:55.642059+00:00 app[api]: Release v22 created by user ppantilla@yahoo.com
+2017-07-08T10:14:55.642059+00:00 app[api]: Deploy d14db0ff by user ppantilla@yahoo.com
+2017-07-08T10:14:56.193562+00:00 heroku[web.1]: Restarting
+2017-07-08T10:14:56.194095+00:00 heroku[web.1]: State changed from up to starting
+2017-07-08T10:14:56.717511+00:00 app[web.1]: Going down, terminating child processes...
+2017-07-08T10:14:56.710646+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2017-07-08T10:14:56.797527+00:00 heroku[web.1]: Process exited with status 143
+2017-07-08T10:15:01.542607+00:00 heroku[web.1]: Starting process with command `heroku-php-apache2`
+2017-07-08T10:15:04.107457+00:00 app[web.1]: Optimizing defaults for 1X dyno...
+2017-07-08T10:15:04.247497+00:00 app[web.1]: Starting php-fpm...
+2017-07-08T10:15:04.243514+00:00 app[web.1]: 4 processes at 128MB memory limit.
+2017-07-08T10:15:06.249117+00:00 app[web.1]: Starting httpd...
+2017-07-08T10:15:06.476052+00:00 heroku[web.1]: State changed from starting to up
+2017-07-08T10:15:20.213387+00:00 heroku[router]: at=info method=GET path="/index.php" host=bbninja.herokuapp.com request_id=409a3113-4e80-4967-906c-99cbac7048bd fwd="121.54.44.157" dyno=web.1 connect=0ms service=488ms status=200 bytes=325 protocol=https
+2017-07-08T10:15:20.212222+00:00 app[web.1]: 10.93.232.18 - - [08/Jul/2017:10:15:19 +0000] "GET /index.php HTTP/1.1" 200 64 "-" "Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+2017-07-08T10:52:03.811635+00:00 heroku[web.1]: Idling
+2017-07-08T10:52:03.812257+00:00 heroku[web.1]: State changed from up to down
+2017-07-08T10:52:04.421478+00:00 app[web.1]: Going down, terminating child processes...
+2017-07-08T10:52:04.413443+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2017-07-08T10:52:04.562465+00:00 heroku[web.1]: Process exited with status 143
+2017-07-08T13:25:29.175248+00:00 app[api]: Update CLEARDB_DATABASE by cleardb by user slashdevnull@hotmail.com
+2017-07-08T13:25:29.175248+00:00 app[api]: Release v23 created by user slashdevnull@hotmail.com
+2017-07-08T13:25:30.152493+00:00 heroku[web.1]: State changed from down to starting
+2017-07-08T13:25:37.396181+00:00 heroku[web.1]: Starting process with command `heroku-php-apache2`
+2017-07-08T13:25:40.056263+00:00 app[web.1]: Optimizing defaults for 1X dyno...
+2017-07-08T13:25:40.272135+00:00 app[web.1]: 4 processes at 128MB memory limit.
+2017-07-08T13:25:40.277797+00:00 app[web.1]: Starting php-fpm...
+2017-07-08T13:25:42.284798+00:00 app[web.1]: Starting httpd...
+2017-07-08T13:25:42.556413+00:00 heroku[web.1]: State changed from starting to up
+2017-07-08T13:26:07.969880+00:00 app[api]: Scaled to web@1:Hobby by user slashdevnull@hotmail.com
+2017-07-08T13:26:08.543513+00:00 heroku[web.1]: State changed from up to down
+2017-07-08T13:26:09.226370+00:00 app[web.1]: Going down, terminating child processes...
+2017-07-08T13:26:09.208591+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2017-07-08T13:26:09.347432+00:00 heroku[web.1]: Process exited with status 143
+2017-07-08T13:26:16.018354+00:00 heroku[web.1]: Starting process with command `heroku-php-apache2`
+2017-07-08T13:26:19.206576+00:00 app[web.1]: Optimizing defaults for 1X dyno...
+2017-07-08T13:26:19.635866+00:00 app[web.1]: 4 processes at 128MB memory limit.
+2017-07-08T13:26:19.649657+00:00 app[web.1]: Starting php-fpm...
+2017-07-08T13:26:21.766412+00:00 heroku[web.1]: State changed from starting to up
+2017-07-08T13:26:21.652559+00:00 app[web.1]: Starting httpd...
+2017-07-08T18:27:10.403389+00:00 heroku[router]: at=info method=GET path="/robots.txt" host=bbninja.herokuapp.com request_id=31f592d0-00a0-4f1a-8bbf-471c6b5a0491 fwd="66.249.76.121" dyno=web.1 connect=1ms service=25ms status=200 bytes=1134 protocol=http
+2017-07-08T18:27:10.407476+00:00 app[web.1]: 10.93.232.18 - - [08/Jul/2017:18:27:10 +0000] "GET /robots.txt HTTP/1.1" 200 901 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+2017-07-09T00:00:05.175352+00:00 heroku[router]: at=info method=GET path="/" host=bbninja.herokuapp.com request_id=644a2865-b04d-445b-a308-adf2bbe6b436 fwd="54.175.253.220" dyno=web.1 connect=1ms service=687ms status=200 bytes=325 protocol=http
+2017-07-09T00:00:05.178327+00:00 app[web.1]: 10.158.160.96 - - [09/Jul/2017:00:00:04 +0000] "GET / HTTP/1.1" 200 64 "-" "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
+2017-07-09T12:33:14.417633+00:00 app[web.1]: 10.63.100.174 - - [09/Jul/2017:12:33:14 +0000] "GET / HTTP/1.1" 200 64 "-" "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+2017-07-09T12:33:14.417012+00:00 heroku[router]: at=info method=GET path="/" host=bbninja.herokuapp.com request_id=f810b089-a8cc-4264-aa10-2a80c79373a9 fwd="157.55.39.118" dyno=web.1 connect=0ms service=346ms status=200 bytes=325 protocol=http
+2017-07-09T13:49:40.280007+00:00 heroku[web.1]: Cycling
+2017-07-09T13:49:40.280826+00:00 heroku[web.1]: State changed from up to starting
+2017-07-09T13:49:41.445129+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2017-07-09T13:49:41.480555+00:00 app[web.1]: Going down, terminating child processes...
+2017-07-09T13:49:41.557704+00:00 app[web.1]: /app/vendor/bin/heroku-php-apache2: line 1:   109 Terminated              sed $sedbufarg -E -e 's/^\[[^]]+\] WARNING: \[pool [^]]+\] child [0-9]+ said into std(err|out): "(.*)("|...)$/\2\3/' -e 's/"$//' < "$logs_pipe" 1>&2
+2017-07-09T13:49:41.727271+00:00 heroku[web.1]: Process exited with status 143
+2017-07-09T13:49:46.111410+00:00 heroku[web.1]: Starting process with command `heroku-php-apache2`
+2017-07-09T13:49:49.187483+00:00 app[web.1]: 4 processes at 128MB memory limit.
+2017-07-09T13:49:49.028297+00:00 app[web.1]: Optimizing defaults for 1X dyno...
+2017-07-09T13:49:49.192740+00:00 app[web.1]: Starting php-fpm...
+2017-07-09T13:49:51.198981+00:00 app[web.1]: Starting httpd...
+2017-07-09T13:49:51.532534+00:00 heroku[web.1]: State changed from starting to up
+2017-07-10T03:07:23.710549+00:00 heroku[router]: at=info method=GET path="/test.php" host=bbninja.herokuapp.com request_id=bb1a22d9-fb0c-44ef-b1f5-f2792db11fbf fwd="121.54.44.162,66.102.6.199" dyno=web.1 connect=1ms service=92ms status=500 bytes=169 protocol=https
+2017-07-10T03:07:23.707746+00:00 app[web.1]: [10-Jul-2017 03:07:23 UTC] PHP Fatal error:  Call to undefined function mysql_connect() in /app/test.php on line 2
+2017-07-10T03:07:23.714665+00:00 app[web.1]: 10.179.86.73 - - [10/Jul/2017:03:07:23 +0000] "GET /test.php HTTP/1.1" 500 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google Favicon
+2017-07-10T03:07:24.541191+00:00 heroku[router]: at=info method=GET path="/test.php" host=bbninja.herokuapp.com request_id=bc937300-6ce7-44a8-bbcb-c0e349b2ce65 fwd="121.54.44.162,66.102.6.203" dyno=web.1 connect=0ms service=2ms status=500 bytes=169 protocol=https
+2017-07-10T03:07:24.540957+00:00 app[web.1]: [10-Jul-2017 03:07:24 UTC] PHP Fatal error:  Call to undefined function mysql_connect() in /app/test.php on line 2
+2017-07-10T03:07:24.541679+00:00 app[web.1]: 10.158.160.96 - - [10/Jul/2017:03:07:24 +0000] "GET /test.php HTTP/1.1" 500 - "http://www.google.com/search" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko; Google Web Preview) Chrome/41.0.2272.118 Safari/537.36
+2017-07-10T03:26:14.986743+00:00 heroku[router]: at=info method=GET path="/robots.txt" host=www.bbninja.co request_id=89ae196c-ef2e-452b-bf54-386d131c6176 fwd="64.246.187.42" dyno=web.1 connect=0ms service=10ms status=200 bytes=1134 protocol=http
+2017-07-10T03:26:14.987557+00:00 app[web.1]: 10.171.127.156 - - [10/Jul/2017:03:26:14 +0000] "GET /robots.txt HTTP/1.1" 200 901 "-" "Mozilla/5.0 (Windows; U; Windows NT 5.1; en; rv:1.9.0.13) Gecko/2009073022 Firefox/3.5.2 (.NET CLR 3.5.30729) SurveyBot/2.3 (DomainTools)
+2017-07-10T03:26:15.566724+00:00 heroku[router]: at=info method=GET path="/" host=www.bbninja.co request_id=c7c229c5-60d3-4643-b990-d5e657269511 fwd="64.246.187.42" dyno=web.1 connect=0ms service=439ms status=200 bytes=325 protocol=http
+2017-07-10T03:26:15.566604+00:00 app[web.1]: 10.30.53.152 - - [10/Jul/2017:03:26:15 +0000] "GET / HTTP/1.1" 200 64 "http://whois.domaintools.com/bbninja.co" "Mozilla/5.0 (Windows; U; Windows NT 5.1; en; rv:1.9.0.13) Gecko/2009073022 Firefox/3.5.2 (.NET CLR 3.5.30729) SurveyBot/2.3 (DomainTools)
+2017-07-10T03:51:23.000000+00:00 app[api]: Build started by user ppantilla@yahoo.com
+2017-07-10T03:51:43.692206+00:00 heroku[web.1]: Restarting
+2017-07-10T03:51:43.692776+00:00 heroku[web.1]: State changed from up to starting
+2017-07-10T03:51:43.437457+00:00 app[api]: Deploy 51a707c3 by user ppantilla@yahoo.com
+2017-07-10T03:51:43.437457+00:00 app[api]: Release v24 created by user ppantilla@yahoo.com
+2017-07-10T03:51:23.000000+00:00 app[api]: Build succeeded
+2017-07-10T03:51:44.573147+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2017-07-10T03:51:44.598512+00:00 app[web.1]: Going down, terminating child processes...
+2017-07-10T03:51:44.742848+00:00 heroku[web.1]: Process exited with status 143
+2017-07-10T03:51:49.320057+00:00 heroku[web.1]: Starting process with command `heroku-php-apache2`
+2017-07-10T03:51:52.352366+00:00 app[web.1]: 4 processes at 128MB memory limit.
+2017-07-10T03:51:52.358586+00:00 app[web.1]: Starting php-fpm...
+2017-07-10T03:51:52.176135+00:00 app[web.1]: Optimizing defaults for 1X dyno...
+2017-07-10T03:51:54.363126+00:00 app[web.1]: Starting httpd...
+2017-07-10T03:51:54.819104+00:00 heroku[web.1]: State changed from starting to up
+2017-07-10T03:51:56.216946+00:00 heroku[router]: at=info method=GET path="/" host=bbninja.herokuapp.com request_id=d78ffffd-4e23-4a0c-bb09-20ed392b8d64 fwd="121.54.44.162" dyno=web.1 connect=1ms service=546ms status=500 bytes=169 protocol=https
+2017-07-10T03:51:56.215647+00:00 app[web.1]: 10.136.154.140 - - [10/Jul/2017:03:51:55 +0000] "GET / HTTP/1.1" 500 - "https://dashboard.heroku.com/" "Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+2017-07-10T04:19:17.408169+00:00 heroku[router]: at=info method=GET path="/" host=bbninja.herokuapp.com request_id=d652570f-cede-4a1b-a3c2-10dd92eb0ee3 fwd="121.54.44.162" dyno=web.1 connect=1ms service=466ms status=500 bytes=169 protocol=https
+2017-07-10T04:19:17.407777+00:00 app[web.1]: 10.138.121.5 - - [10/Jul/2017:04:19:16 +0000] "GET / HTTP/1.1" 500 - "-" "Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+2017-07-10T04:29:29.190660+00:00 heroku[router]: at=info method=GET path="/test.php" host=bbninja.herokuapp.com request_id=843dcf63-db95-4aa3-95bc-7689e1e48f58 fwd="121.54.44.162" dyno=web.1 connect=0ms service=5ms status=500 bytes=169 protocol=https
+2017-07-10T04:29:29.188110+00:00 app[web.1]: [10-Jul-2017 04:29:29 UTC] PHP Fatal error:  Call to undefined function mysql_connect() in /app/test.php on line 2
+2017-07-10T04:29:29.188835+00:00 app[web.1]: 10.150.98.212 - - [10/Jul/2017:04:29:29 +0000] "GET /test.php HTTP/1.1" 500 - "-" "Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
