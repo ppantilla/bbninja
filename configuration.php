@@ -1,8 +1,5 @@
 <?php
 
-    error_reporting(E_ALL);
-    ini_set("display_errors", 1);
-
 class JConfig {
 	public $MetaAuthor = '0';
 	public $MetaDesc = '';
@@ -12,7 +9,7 @@ class JConfig {
 	public $MetaVersion = '0';
 	public $access = '1';
 	public $cache_handler = 'file';
-	public $cachetime = '15';
+	public $cachetime = '150';
 	public $caching = '0';
 	public $captcha = 'recaptcha';
 	public $cookie_domain = '';
@@ -24,7 +21,7 @@ class JConfig {
 	public $debug_lang = '0';
 	public $display_offline_message = '1';
 	public $editor = 'tinymce';
-	public $error_reporting = 'none';
+	public $error_reporting = 'all';
 	public $feed_email = 'author';
 	public $feed_limit = '10';
 	public $force_ssl = '0';
@@ -41,7 +38,7 @@ class JConfig {
 	public $lifetime = '9999';
 	public $list_limit = '20';
 	public $live_site = '';
-	public $log_path = '/nfs/c04/h03/mnt/60664/domains/bbninjaalpha.pantilla.com/html/log';
+	public $log_path = 'log';
 	public $mailer = 'mail';
 	public $mailfrom = 'support@bbninja.com';
 	public $memcache_compress = '1';
