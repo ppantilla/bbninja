@@ -11,9 +11,7 @@ $db = substr($url["path"], 1);
 
 $conn = new mysqli($server, $username, $password, $db);
 
-$link = mysqli_connect('localhost', 'my_user', 'my_password', 'my_db');
-
-if (!$link) {
+if (!$conn) {
     die('Connect Error (' . mysqli_connect_errno() . ') ' . mysqli_connect_error());
 }
 
