@@ -38,7 +38,7 @@ class JConfig {
 	public $lifetime = '9999';
 	public $list_limit = '20';
 	public $live_site = '';
-	public $log_path = '/log';
+	public $log_path = '/app/log';
 	public $mailer = 'mail';
 	public $mailfrom = 'support@bbninja.com';
 	public $memcache_compress = '1';
@@ -66,7 +66,7 @@ class JConfig {
 	public $smtpport = '25';
 	public $smtpsecure = 'none';
 	public $smtpuser = '';
-	public $tmp_path = '/tmp';
+	public $tmp_path = '/app/tmp';
 	public $unicodeslugs = '0';
 	public $user = 'bf4ef58d12dbab';
 	public $mailonline = '1';
