@@ -1,0 +1,9 @@
+/**
+* @version   $Id: master-ie11.css 23128 2014-09-25 15:44:58Z arifin $
+* @author    RocketTheme http://www.rockettheme.com
+* @copyright Copyright (C) 2007 - 2012 RocketTheme, LLC
+* @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+/* Navigation */
+body .gf-menu.l1 > li.parent > .item:after {top: 50%;margin-top: 10px;}

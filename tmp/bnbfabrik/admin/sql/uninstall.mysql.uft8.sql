@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS `#__bnbfabrik_cron`;
+DROP TABLE IF EXISTS `#__bnbfabrik_elements`;
+DROP TABLE IF EXISTS `#__bnbfabrik_formgroup`;
+DROP TABLE IF EXISTS `#__bnbfabrik_forms`;
+DROP TABLE IF EXISTS `#__bnbfabrik_form_sessions`;
+DROP TABLE IF EXISTS `#__bnbfabrik_groups`;
+DROP TABLE IF EXISTS `#__bnbfabrik_joins`;
+DROP TABLE IF EXISTS `#__bnbfabrik_jsactions`;
+DROP TABLE IF EXISTS `#__bnbfabrik_lists`;
+DROP TABLE IF EXISTS `#__bnbfabrik_log`;
+DROP TABLE IF EXISTS `#__bnbfabrik_packages`;
+DROP TABLE IF EXISTS `#__bnbfabrik_validations`;
+DROP TABLE IF EXISTS `#__bnbfabrik_visualizations`;
