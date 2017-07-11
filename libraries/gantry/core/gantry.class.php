@@ -1,8 +1,8 @@
 <?php
 /**
- * @version   $Id: gantry.class.php 13269 2013-09-05 01:37:10Z djamil $
+ * @version   $Id: gantry.class.php 30566 2017-04-28 10:24:41Z matias $
  * @author    RocketTheme http://www.rockettheme.com
- * @copyright Copyright (C) 2007 - 2013 RocketTheme, LLC
+ * @copyright Copyright (C) 2007 - 2017 RocketTheme, LLC
  * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
  *
  * Gantry uses the Joomla Framework (http://www.joomla.org), a GNU/GPLv2 content management system
@@ -222,7 +222,7 @@ class Gantry
 	 */
 	public function __sleep()
 	{
-		return $this->__cacheables;
+		return array_unique($this->__cacheables);
 	}
 
 	/**
@@ -411,7 +411,7 @@ class Gantry
 		// Init all features
 		foreach ($this->getFeatures() as $feature) {
 			$feature_instance = $this->getFeature($feature);
-			if ($feature_instance->isEnabled() && method_exists($feature_instance, 'init')) {
+			if ($feature_instance && $feature_instance->isEnabled() && method_exists($feature_instance, 'init')) {
 				$feature_instance->init();
 			}
 		}
@@ -420,7 +420,7 @@ class Gantry
 			$this->_parts_cached = true;
 
 			foreach ($parts as $part => $value) {
-				$this->$part = $value;
+				$this->{$part} = $value;
 			}
 		}
 
@@ -499,7 +499,7 @@ class Gantry
 			if (!$this->_parts_cached) {
 				$parts_cache = array();
 				foreach ($this->_parts_to_cache as $part) {
-					$parts_cache[$part] = $this->$part;
+					$parts_cache[$part] = $this->{$part};
 				}
 				if ($parts_cache) {
 					$cache->set($this->cacheKey('parts'), $parts_cache);
@@ -509,7 +509,7 @@ class Gantry
 			// Finalize all features
 			foreach ($this->getFeatures() as $feature) {
 				$feature_instance = $this->getFeature($feature);
-				if ($feature_instance->isEnabled() && method_exists($feature_instance, 'finalize')) {
+				if ($feature_instance && $feature_instance->isEnabled() && method_exists($feature_instance, 'finalize')) {
 					$feature_instance->finalize();
 				}
 			}
@@ -1724,12 +1724,12 @@ class Gantry
 		foreach ($this->_config_vars as $config_var_name => $class_var_name) {
 			$default_config_var_name = 'gantry_default_' . $config_var_name;
 			if (isset($$default_config_var_name)) {
-				$this->$class_var_name = $$default_config_var_name;
+				$this->{$class_var_name} = $$default_config_var_name;
 				$this->__cacheables[]  = $class_var_name;
 			}
 			$template_config_var_name = 'gantry_' . $config_var_name;
 			if (isset($$template_config_var_name)) {
-				$this->$class_var_name = $$template_config_var_name;
+				$this->{$class_var_name} = $$template_config_var_name;
 				$this->__cacheables[]  = $class_var_name;
 			}
 		}
@@ -1866,7 +1866,7 @@ class Gantry
 		// Init all features
 		foreach ($this->getFeatures() as $feature) {
 			$feature_instance = $this->getFeature($feature);
-			if ($feature_instance->isEnabled() && $feature_instance->isInPosition($position) && method_exists($feature_instance, 'render')) {
+			if ($feature_instance && $feature_instance->isEnabled() && $feature_instance->isInPosition($position) && method_exists($feature_instance, 'render')) {
 				$return[] = $feature;
 			}
 		}
