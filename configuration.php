@@ -1,5 +1,4 @@
 <?php
-
 class JConfig {
 	public $MetaAuthor = '0';
 	public $MetaDesc = '';
@@ -39,7 +38,7 @@ class JConfig {
 	public $list_limit = '20';
 	public $live_site = '';
 	public $log_path = '/app/log';
-	public $mailer = 'mail';
+	public $mailer = 'smtp';
 	public $mailfrom = 'support@bbninja.com';
 	public $memcache_compress = '1';
 	public $memcache_persist = '1';
@@ -60,16 +59,16 @@ class JConfig {
 	public $session_handler = 'database';
 	public $sitename = 'BB Ninja';
 	public $sitename_pagetitles = '1';
-	public $smtpauth = '0';
-	public $smtphost = 'localhost';
-	public $smtppass = '';
-	public $smtpport = '25';
-	public $smtpsecure = 'none';
-	public $smtpuser = '';
+	public $smtpauth = '1';
+	public $smtphost = 'smtp.gmail.com';
+	public $smtppass = 'bee11436';
+	public $smtpport = '465';
+	public $smtpsecure = 'tls';
+	public $smtpuser = 'pantilla.client@gmail.com';
 	public $tmp_path = '/app/tmp';
 	public $unicodeslugs = '0';
 	public $user = 'bf4ef58d12dbab';
-	public $mailonline = '0';
+	public $mailonline = '1';
 	public $frontediting = '1';
 	public $asset_id = '1';
 }
