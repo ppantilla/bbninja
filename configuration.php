@@ -69,7 +69,7 @@ class JConfig {
 	public $tmp_path = '/app/tmp';
 	public $unicodeslugs = '0';
 	public $user = 'bf4ef58d12dbab';
-	public $mailonline = '1';
+	public $mailonline = '0';
 	public $frontediting = '1';
 	public $asset_id = '1';
 }
