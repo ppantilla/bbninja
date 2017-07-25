@@ -62,7 +62,7 @@ class JConfig {
 	public $smtpauth = '1';
 	public $smtphost = 'smtp.gmail.com';
 	public $smtppass = 'bee11436';
-	public $smtpport = '465';
+	public $smtpport = '587';
 	public $smtpsecure = 'tls';
 	public $smtpuser = 'pantilla.client@gmail.com';
 	public $tmp_path = '/app/tmp';
